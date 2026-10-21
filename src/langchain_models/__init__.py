@@ -1,6 +1,10 @@
-import langchain
+from langchain_google_genai import ChatGoogleGenerativeAI
+from dotenv import load_dotenv
 
-print(langchain.__version__)
+load_dotenv()
+
 
 def main() -> None:
-  print("Hello from langchain-models!")
+    model = ChatGoogleGenerativeAI(model="gemini-flash-latest")
+    result = model.invoke("what is the capital of pakistan")
+    print(result.content)

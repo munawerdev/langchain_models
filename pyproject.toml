@@ -8,9 +8,18 @@ authors = [
 ]
 requires-python = ">=3.13"
 dependencies = [
+    "google-generativeai>=0.8.6",
+    "huggingface-hub>=1.33.0",
     "langchain>=1.4.6",
     "langchain-anthropic>=1.7.6",
+    "langchain-core>=1.6.12",
+    "langchain-google-genai>=4.4.2",
+    "langchain-huggingface>=1.2.3",
     "langchain-openai>=1.7.2",
+    "numpy>=2.5.4",
+    "python-dotenv>=1.2.4",
+    "scikit-learn>=1.9.1",
+    "transformers>=5.20.2",
 ]
 
 [project.scripts]
